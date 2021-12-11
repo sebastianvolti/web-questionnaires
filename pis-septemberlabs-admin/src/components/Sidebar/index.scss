@@ -1,0 +1,35 @@
+@import '../../helpers/constants/colors.scss';
+
+.sidebar {
+    background-image: linear-gradient(to bottom, $semilightblue, $semilightskyblue);
+    float: left;
+    height: 100vh;
+    width: 200px;
+
+    &--expanded {
+        height: 100%;
+    }
+
+    &__container {
+        padding: 40px 30px 5px;
+
+        &__icon {
+            background-image: url('../../assets/icons/Vector.svg');
+            background-size: cover;
+            height: 40px;
+            width: 118px;
+        }
+
+        &__subtitle {
+            color: $verylightgray;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 40px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}

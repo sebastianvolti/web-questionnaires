@@ -1,0 +1,110 @@
+@import '../../helpers/constants/colors.scss';
+
+.finish {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 150px);
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  padding-left: 38vw;
+  padding-bottom: 150px;
+  width: calc(100vw - 38vw);
+
+  @media screen and (max-width: 425px) {
+    align-items: flex-start;
+    height: calc(100vh - 20px);
+    padding-left: 40px;
+    padding-bottom: 20px;
+    width: calc(100% - 40px);
+  }
+
+  &__vector {
+    background-color: $lightblue;
+    border-bottom-right-radius: 60vh;
+    border-top-right-radius: 60vh;
+    bottom: -5vh;   
+    height: 110vh;
+    left: -12vw;
+    opacity: 0.2;
+    position: absolute;
+    width: 45vw;
+
+    @media screen and (max-width: 425px) {
+      width: 105vw;
+      height: 80vh;
+      border-top-right-radius: 60vh;
+      border-bottom-right-radius: 60vh;
+      top: 5vh;
+      left: -9vw;
+    }
+  }
+
+  &__image-container {
+    @media screen and (max-width: 425px) {
+      bottom: 40px;
+      display: flex;
+      left: 0;
+      justify-content: center;
+      margin: 0;
+      position: absolute;
+      width: 100vw;
+    }
+  }
+
+  &__header {
+    margin-bottom: 57px;
+    width: 120px;
+
+    @media screen and (max-width: 425px) {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 26px;
+
+    @media screen and (max-width: 425px) {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    letter-spacing: normal;
+    line-height: 2.01;
+    margin-bottom: 80px;
+    opacity: 0.9;
+    text-align: left;
+    width: 53vw;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      line-height: 1.88;
+      color: $lightBlack;
+      width: 85%;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__logo_vector {
+    background-image: linear-gradient(to top, #3ec2fe, #3e73fe);
+    border-radius: 5px 50% 50% 5px;
+    float: left;
+    height: 32.2px;
+    width: 29px;
+  }
+
+  &__logo_title-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+  }
+}

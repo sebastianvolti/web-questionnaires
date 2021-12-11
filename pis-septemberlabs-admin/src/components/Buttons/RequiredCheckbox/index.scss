@@ -1,0 +1,25 @@
+@import '../../../helpers/constants/colors.scss';
+
+.required-checkbox {
+  align-items: center;
+  bottom: 100px;
+  flex-direction: row;
+  display: flex;
+  position: absolute;
+
+  @media (max-height: 850px) {
+    bottom: 75px;
+  }
+
+  &__checkbox {
+    height: 15px;
+    margin: 10px;
+    width: 15px;
+  }
+
+  &__text {
+    color: $softblack;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+  }
+}

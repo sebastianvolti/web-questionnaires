@@ -1,0 +1,25 @@
+@import "../../helpers/constants/colors.scss";
+
+.App {
+  text-align: center;
+
+  &__title {
+    align-items: center;
+    color: $lightBlack;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 32px 0 64px 0;
+    padding: 0 40px;
+  }
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+}
+
+.title-container {
+  height: 150px;
+  padding: 50px;
+}

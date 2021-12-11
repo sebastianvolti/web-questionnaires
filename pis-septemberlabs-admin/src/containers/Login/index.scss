@@ -1,0 +1,71 @@
+@import '../../helpers/constants/colors.scss';
+
+.login {
+  background-image: url('../../assets/img/wallpaperLogin.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+
+  &__content {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__header {
+    min-width: 221px;
+  }
+
+  &__title {
+    color: $white;
+    font-family: 'SourceSansPro', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    height: 20px;
+    margin: 39.5px 58px 24px 57px;
+    line-height: normal;
+    letter-spacing: 1.33px;
+    text-align: center;
+    width: 221px;
+  }
+
+  &__button {
+    background-color: $white;
+    border-color: transparent;
+    border-radius: 8px;
+    color: $darkblue;
+    cursor: pointer;
+    font-family: 'SFProDisplay', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    height: 48px;
+    line-height: normal;
+    letter-spacing: 0.46px;
+    width: 327px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      border: 4px solid $blue;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__button svg {
+    margin-right: 13px;
+  }
+}

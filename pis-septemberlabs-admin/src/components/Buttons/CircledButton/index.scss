@@ -1,0 +1,36 @@
+@import '../../../helpers/constants/colors.scss';
+
+.button1 {
+  border: 0;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 40px;
+  outline: none;
+  width: 192px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &__primary {
+    background-color: $lightblue;
+  }
+
+  &button1__secondary {
+    background-color: $gray;
+  }
+
+  &__label {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+
+    &__primary {
+      color: $white;
+    }
+
+    &__secondary {
+      color: $darkblue;
+    }
+  }
+}

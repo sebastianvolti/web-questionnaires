@@ -1,0 +1,22 @@
+@import '../../../helpers/constants/colors.scss';
+
+.sidebar-button {
+  align-items: center;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  height: 33px;
+  padding-left: 30px;
+  text-align: left;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &__selected {
+    background-color: $verylightgray;
+  }
+}

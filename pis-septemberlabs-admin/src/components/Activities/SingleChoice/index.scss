@@ -1,0 +1,175 @@
+@import '../../../helpers/constants/colors.scss';
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__add-button {
+    align-items: center;
+    border: solid 1px $semitransparentblack;
+    border-radius: 30px;
+    box-sizing: border-box;
+    color: $darkgray;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Source Sans Pro';
+    font-size: 15px;
+    height: 40px;
+    justify-content: center;
+    margin-top: 14px;
+    padding: 10px;
+    width: 190px;
+
+    @media (max-height: 850px) {
+      margin-top: 10px;
+      padding: 7px;
+    }
+
+    &__selected {
+      color: $deepdarkgray;
+
+      &:hover {
+        color: $softblack;
+      }
+    }
+  }
+
+  &__answers {
+    width: 420px;
+
+    &__list {
+      max-height: 200px;
+      overflow: scroll;
+      overflow-x: hidden;
+      padding-right: 41px;
+      position: relative;
+      width: 100%;
+
+      &__answer {
+        align-items: center;
+        border: solid 1px $semitransparentblack;
+        border-radius: 5px;
+        box-sizing: border-box;
+        display: flex;
+        float: left;
+        height: 40px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        width: 420px;
+
+        @media (max-height: 850px) {
+          height: 35px;
+        }
+      }
+
+      @media (max-height: 850px) {
+        max-height: 180px;
+      }
+
+      &__cross {
+        align-items: center;
+        color: $semidarkgray;
+        cursor: pointer;
+        display: flex;
+        float: left;
+        font-size: 20px;
+        height: 42px;
+        justify-content: center;
+        position: absolute;
+        right: -5px;
+        width: 9%;
+
+        @media (max-height: 850px) {
+          height: 38px;
+        }
+
+        &:hover {
+          color: $deepdarkgray;
+        }
+      }
+
+      &__extended {
+        max-height: 200px;
+
+        @media (max-height: 850px) {
+          max-height: 180px;
+        }
+      }
+    }
+  }
+
+  &__new-answer {
+    margin-top: 10px;
+    position: relative;
+    width: 420px;
+
+    &__input {
+      border: solid 1px $semitransparentblack;
+      border-radius: 5px;
+      box-sizing: border-box;
+      color: $softblack;
+      float: left;
+      font-family: 'Source Sans Pro';
+      font-size: 15px;
+      height: 40px;
+      padding: 9px;
+      resize: none;
+      width: 100%;
+
+      @media (max-height: 850px) {
+        height: 35px;
+        padding: 7px;
+      }
+    }
+    
+    &__cross {
+      align-items: center;
+      color: $semidarkgray;
+      cursor: pointer;
+      display: flex;
+      float: left;
+      font-size: 20px;
+      height: 42px;
+      justify-content: center;
+      position: absolute;
+      right: -40px;
+      width: 9%;
+
+      @media (max-height: 850px) {
+        height: 38px;
+      }
+
+      &:hover {
+        color: $deepdarkgray;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: $semideepdarkgray;
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    margin: 24px 0 9px 1px;
+    text-align: left;
+
+    @media (max-height: 850px) {
+      margin: 10px 0 9px 1px;
+    }
+  }
+
+  &__text {
+    color: $softblack;
+    font-family: 'Source Sans Pro';
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

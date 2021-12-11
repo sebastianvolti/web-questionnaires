@@ -1,0 +1,86 @@
+@import '../../helpers/constants/colors.scss';
+
+.questionnaire {
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding-top: 40px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    padding-top: 70px;
+  }
+
+  &__activity {
+    height: 500px;
+    width: 100%;
+
+    &--card-sorting {
+      width: 100% !important;
+    }
+
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+
+    @media (max-height: 568px) {
+      height: 365px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 76px 0 56px 0;
+    width: 50%;
+
+    @media (max-width: 768px) {
+      width: calc(100% - 80px);
+    }
+
+    button {
+      background-color: $lightblue;
+      border: none;
+      border-radius: 24px;
+      color: $white;
+      cursor: pointer;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 18px;
+      height: 43px;
+      width: 139px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      @media (max-width: 768px) {
+        height: 48px;
+        width: 160px;
+      }
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    button:disabled {
+      cursor: default;
+      opacity: 0.5;
+    }
+  }
+
+  &__activity {
+    min-height: 400px;
+    width: 60%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

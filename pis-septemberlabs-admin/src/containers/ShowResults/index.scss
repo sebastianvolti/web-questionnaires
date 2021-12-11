@@ -1,0 +1,33 @@
+@import '../../helpers/constants/colors.scss';
+
+.results-container {
+  padding: 64px 80px 64px 48px;
+}
+
+.results-header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 36px;
+}
+
+.question-result {
+  border-radius: 8px;
+  border: solid 1px $darkgray;
+  height: 288px;
+  margin-top: 24px;
+  padding: 24px 40px 33px 33px;
+  overflow-y: auto;
+}
+
+.question-result-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.question-resut-anwers-count-label {
+  background-color: $semilightskyblue;
+  border-radius: 8px;
+  color: $white;
+  font-size: 14px;
+  padding: 8px 14px;
+}

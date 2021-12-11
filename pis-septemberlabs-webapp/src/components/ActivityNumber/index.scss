@@ -1,0 +1,41 @@
+@import '../../helpers/constants/colors.scss';
+
+.activity-number {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+
+  &__rectangle {
+    background-color: $lightblue;
+    height: 27px;
+    width: 89px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__circle {
+    background-color: $lightblue;
+    border-bottom-left-radius: 44.5px;
+    border-bottom-right-radius: 44.5px;
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    height: 44.5px;
+    letter-spacing: 0.46px;
+    width: 89px;
+
+    @media (max-width: 768px) {
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      height: 40px;
+      top: 0;
+      width: 80px;
+    }
+  }
+}

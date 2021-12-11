@@ -1,0 +1,27 @@
+@import "../../helpers/constants/colors.scss";
+
+.ranking-question {
+  &__title {
+    color: $lightBlack;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 32px 0 64px 0;
+    padding: 0 40px;
+    user-select: none;
+  }
+
+  &__stars {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+
+  &__star {
+    padding: 15px;
+
+    @media (max-width: 768px) {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+  }
+}

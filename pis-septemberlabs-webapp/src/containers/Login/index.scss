@@ -1,0 +1,121 @@
+@import '../../helpers/constants/colors.scss';
+
+.login {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 150px);
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 150px;
+  padding-left: 38vw;
+  position: relative;
+  width: calc(100vw - 38vw);
+
+  @media screen and (max-width: 425px) {
+    align-items: flex-start;
+    height: calc(100vh - 20px);
+    padding-bottom: 20px;
+    padding-left: 40px;
+    width: calc(100% - 40px);
+  }
+
+  &__vector {
+    background-color: $lightblue;
+    border-bottom-right-radius: 60vh;
+    border-top-right-radius: 60vh;
+    bottom: -5vh;
+    height: 110vh;
+    left: -12vw;
+    opacity: 0.2;
+    position: absolute;
+    width: 45vw;
+
+    @media screen and (max-width: 425px) {
+      border-bottom-right-radius: 60vh;
+      border-top-right-radius: 60vh;
+      height: 80vh;
+      left: -9vw;
+      top: 5vh;
+      width: 105vw;
+    }
+  }
+
+  &__image-container {
+    @media screen and (max-width: 425px) {
+      bottom: 40px;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      margin: 0;
+      position: absolute;
+      width: 100vw;
+    }
+  }
+
+  &__image-container svg {
+    width: 116px;
+  }
+
+  &__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 26px;
+
+    @media screen and (max-width: 425px) {
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    letter-spacing: normal;
+    line-height: 2.01;
+    margin-bottom: 80px;
+    opacity: 0.9;
+    text-align: left;
+    width: 53vw;
+
+    @media screen and (max-width: 768px) {
+      color: $lightBlack;
+      font-size: 16px;
+      line-height: 1.88;
+      margin-bottom: 50px;
+      width: 85%;
+    }
+  }
+
+  &__button {
+    background-color: $blue;
+    border: 0;
+    border-radius: 6.4px;
+    color: $white;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25.7px;
+    height: 64px;
+    letter-spacing: 0.49px;
+    line-height: 1.4;
+    width: 430px;
+
+    &:hover {
+      background-color: $darkblue;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      font-weight: bold;
+      height: 40px;
+      margin-bottom: 100px;
+      width: 85%;
+      z-index: 1;
+    }
+  }
+
+  &__button svg {
+    margin-right: 13px;
+  }
+}

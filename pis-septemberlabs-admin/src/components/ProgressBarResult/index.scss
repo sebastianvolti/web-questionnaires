@@ -1,0 +1,29 @@
+@import '../../helpers/constants/colors.scss';
+
+.progress-bar-item {
+  border: 1px solid $semidarkgray;
+  border-radius: 24px;
+  height: 40px;
+  position: relative;
+  width: 100%;
+
+  &:before {
+    color: $darkblue;
+    content: attr(data-label);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    left: 0;
+    padding: 3px 23px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+}
+
+.progress-bar-value {
+  background-color: #45adfb;
+  border-radius: 24px;
+  display: inline-block;
+  height: 100%;
+  opacity: 0.2;
+}

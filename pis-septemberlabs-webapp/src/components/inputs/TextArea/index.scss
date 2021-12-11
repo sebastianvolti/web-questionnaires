@@ -1,0 +1,38 @@
+@import "../../../helpers/constants/colors.scss";
+
+::placeholder {
+  color: $lightgrayWOpacity;
+}
+
+.text-input-title {
+  &__text-area-input {
+    border: solid 1.5px #eaeaea;
+    border-radius: 8px;
+    font-size: 20px;
+    resize: none;
+    width: 100%;
+  }
+}
+
+textarea {
+  font-family: 'Source Sans Pro';
+  height: 200px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+textarea:focus {
+  border: 2px solid $lightblue;
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .text-input-title {
+    &__text-area-input {
+      border: solid 1.5px $lightblue;
+      border-radius: 8px;
+      resize: none;
+      width: 76%;
+    }
+  }
+}

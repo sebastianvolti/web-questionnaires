@@ -1,0 +1,15 @@
+@import '../../../helpers/constants/colors.scss';
+
+.text-results-answers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-result-item-container {
+  padding: 10px 0;
+
+  &:not(:last-child) {
+    border-bottom: solid 1px $darkgray;
+  }
+}

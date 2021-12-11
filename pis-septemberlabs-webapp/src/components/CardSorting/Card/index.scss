@@ -1,0 +1,41 @@
+@import '../../../helpers/constants/colors.scss';
+
+.card {
+    background: $white;
+    border: 1.5px solid $pastel;
+    border-radius: 0.3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    height: 20px;
+    margin: 8px 8px 0;
+    padding: 9px;
+    text-align: left;
+    transition: opacity 0.1s ease;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    &__in-category {
+        margin: 4px auto;
+        width: 80%;
+    }
+
+    &__0 {
+        border: solid 1.5px $semiblue;
+    }
+
+    &__1 {
+        border: solid 1.5px $cyan;
+    }
+
+    &__2 {
+        border: solid 1.5px $orange;
+    }
+
+    &__3 {
+        border: solid 1.5px $green;
+    }
+
+    @media screen and (max-width: 768px){
+        display: inline-block;
+    }
+}

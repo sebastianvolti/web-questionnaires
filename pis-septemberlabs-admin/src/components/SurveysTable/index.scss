@@ -1,0 +1,77 @@
+@import '../../helpers/constants/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+.surveys-table {
+  border-collapse: separate;
+  border-radius: 0.5em;
+  border-spacing: 0;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  table-layout: fixed;
+  text-align: left;
+  width: 100%;
+
+  &-header {
+    & > tr > th {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      font-weight: bold;
+      padding: 6px;
+    }
+  }
+
+  &-body {
+    & > tr > td {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 12px 6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &-icons {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+
+    &__edit {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    & > svg {
+      cursor: pointer;
+
+      &:first-child {
+        padding: 0 30px;
+      }
+
+      &:last-child {
+        color: $semidarkgray;
+
+        &:hover {
+          color: $deepdarkgray;
+        }
+      }
+    }
+  }
+
+  &__row-container {
+    &:hover {
+      background-color: rgba(45, 63, 80, 0.1);
+    }
+  }
+}
+
+.align-content-center {
+  text-align: center;
+}
+
+.align-content-right {
+  text-align: right;
+}
+
+.align-content-left {
+  text-align: left;
+}

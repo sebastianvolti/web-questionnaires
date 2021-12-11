@@ -1,0 +1,21 @@
+@import '../../../helpers/constants/colors.scss';
+
+.logout {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  height: 25px;
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__label {
+    color: $lightgrayWOpacity;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 5px;
+  }
+}

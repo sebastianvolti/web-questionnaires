@@ -1,0 +1,17 @@
+.table-header {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+  }
+
+  &__button {
+    margin-top: 1em;
+  }
+}
+
+.table-container {
+  margin: 0 100px;
+}

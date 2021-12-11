@@ -1,0 +1,13 @@
+// APP REDUCER
+export const SET_AUTH_DATA = 'SET_AUTH_DATA';
+export const GET_USER_DATA_SUCCESS = 'GET_USER_DATA_SUCCESS';
+export const GET_USER_DATA = 'GET_USER_DATA';
+export const SIGN_OUT_USER = "SIGN_OUT_USER"
+
+// QUESTIONNAIRE REDUCER
+export const GET_QUESTIONNAIRE = 'GET_QUESTIONNAIRE';
+export const GET_QUESTIONNAIRE_SUCCESS = 'GET_QUESTIONNAIRE_SUCCESS';
+export const UPDATE_QUESTIONNAIRE = 'UPDATE_QUESTIONNAIRE'; // Triggers Sagas Update Request & Updates Redux Store.
+export const FINISH_QUESTIONNAIRE = 'FINISH_QUESTIONNAIRE';
+export const GET_FINISH_STATUS = 'GET_FINISH_STATUS';
+export const SET_ANSWER = 'SET_ANSWER'; // Triggers Sagas Update Request & Updates Redux Store.

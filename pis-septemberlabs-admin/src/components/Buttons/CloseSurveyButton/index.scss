@@ -1,0 +1,22 @@
+@import '../../../helpers/constants/colors.scss';
+
+.close-survey-button {
+  background-color: $orange;
+  border: 0;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 40px;
+  outline: none;
+  width: 145px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &__label {
+    color: $white;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+  }
+}

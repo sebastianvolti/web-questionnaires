@@ -1,0 +1,78 @@
+@import '../../helpers/constants/colors.scss';
+
+.activity-modal {
+  background-color: $white;
+  border-radius: 5px;
+  border: 1px solid $black;
+  box-sizing: border-box;
+  height: 800px;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 890px;
+
+  @media (max-height: 850px) {
+    height: 650px;
+    width: 700px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 32px 20px 0px;
+  }
+
+  &__times {
+    cursor: pointer;
+
+    @media (max-height: 850px) {
+      font-size: 1.8em;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-size: 36px;
+
+    @media (max-height: 850px) {
+      font-size: 28px;
+    }
+  }
+
+  &__questions {
+    display: flex;
+    justify-content: center;
+
+    &--first-row {
+      margin-top: 30px;
+
+      @media (max-height: 850px) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__questions > div {
+    margin: 12px;
+  }
+
+  &__footer {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 0px 40px 36px;
+    width: calc(100% - 80px);
+
+    @media (max-height: 850px) {
+      padding: 0px 10px 10px;
+      width: calc(100% - 20px);
+    }
+  }
+
+  &__footer > div {
+    margin: 12px;
+  }
+}

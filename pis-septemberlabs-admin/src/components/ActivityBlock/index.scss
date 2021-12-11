@@ -1,0 +1,71 @@
+@import '../../helpers/constants/colors.scss';
+
+.activity-block {
+  $block: &;
+  border: solid 1.5px $lightgray;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 150px;
+  text-align: center;
+  position: relative;
+  width: 150px;
+
+  @media (max-height: 850px) {
+    height: 125px;
+    width: 125px;
+  }
+
+  &__question-img {
+    align-items: center;
+    display: flex;
+    height: 80%;
+    opacity: 0.25;
+
+    &--card-sorting > svg {
+      margin-bottom: 15px !important;
+    }
+  }
+
+  &__question-img > svg {
+    margin: 0 auto;
+  }
+
+  &__question-name {
+    bottom: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 17px;
+    opacity: 0.5;
+    position: absolute;
+    padding-bottom: 20px;
+    width: 100%;
+
+    @media (max-height: 850px) {
+      font-size: 16px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__selected {
+    background-color: $lightblue;
+
+    #{$block}__question-img {
+      opacity: 1;
+    }
+
+    #{$block}__question-img > svg  path {
+      fill: white;
+      stroke: white;
+    }
+
+    #{$block}__question-img > svg  rect {
+      fill: transparent;
+      stroke: white;
+    }
+
+    #{$block}__question-name {
+      color: white;
+      opacity: 1;
+    }
+  }
+}

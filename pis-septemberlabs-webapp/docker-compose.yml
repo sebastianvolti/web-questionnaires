@@ -1,0 +1,17 @@
+version: '2.4'
+networks:
+  default:
+    external:
+      name: pis-septemberlabs
+services:
+  webapp:
+    tty: true
+    build:
+      context: /Users/svolti/Documents/fing/pis/pis-septemberlabs-webapp
+    container_name: pis-septemberlabs_webapp
+    command: yarn start
+    ports:
+      - '5002:5002'
+    volumes:
+      - "/Users/svolti/Documents/fing/pis/pis-septemberlabs-webapp/src:/app/pis-septemberlabs-webapp/src"
+      - "/Users/svolti/Documents/fing/pis/pis-septemberlabs-webapp/public:/app/pis-septemberlabs-webapp/public"

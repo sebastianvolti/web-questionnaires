@@ -1,0 +1,25 @@
+@import "../../helpers/constants/colors.scss";
+
+.simple-choice {
+  text-align: center;
+
+  &__buttons {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 15px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    @media screen and (min-width: 769px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  &__header {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: $lightBlack;
+    margin: 32px 0 64px 0;
+    padding: 0 40px;
+  }
+}

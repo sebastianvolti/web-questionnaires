@@ -1,0 +1,28 @@
+version: '3.7'
+networks:
+  default:
+    external:
+      name: pis-septemberlabs
+services:
+  api:
+    build:
+      context: /Users/svolti/Documents/fing/pis/pis-septemberlabs-api
+    container_name: pis-septemberlabs_api
+    command: npm run dev
+    ports:
+      - '5000:5000'
+    volumes:
+      - /Users/svolti/Documents/fing/pis/pis-septemberlabs-api/src:/app/pis-septemberlabs-api/src
+      - /Users/svolti/Documents/fing/pis/pis-septemberlabs-api/.env:/app/pis-septemberlabs-api/.env
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:5.7
+    container_name: pis-septemberlabs_mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+    ports:
+      - '3306:3306'
+    volumes:
+      - /var/lib/mysql:/var/lib/mysql

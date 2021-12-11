@@ -1,0 +1,143 @@
+@import '../../../helpers/constants/colors.scss';
+
+.group {
+    width: 50%;
+
+    @media screen and (min-width: 768px) {
+        width: 30%;
+    }
+
+    &--parent {
+        padding: 10px;
+        
+        &__container {
+            align-items: stretch;
+            border-radius: 8px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            position: relative;
+
+            &__0 {
+                background-color: $lightsemiblue;
+                border: solid 1.5px $semiblue;
+
+                &__hbar {
+                    border-left: none;
+                    border-top: 1.5px solid $semiblue;
+                    width: 90%;
+                }
+
+                &__close {
+                    color: $semiblue;
+                }
+            }
+
+            &__1 {
+                background-color: $lightcyan;
+                border: solid 1.5px $cyan;
+
+                &__hbar {
+                    border-left: none;
+                    border-top: 1.5px solid $cyan;
+                    width: 90%;
+                }
+
+                &__close {
+                    color: $cyan;
+                }
+            }
+
+            &__2 {
+                background-color: $lightorange;
+                border: solid 1.5px $orange;
+
+                &__hbar {
+                    border-left: none;
+                    border-top: 1.5px solid $orange;
+                    width: 90%;
+                }
+
+                &__close {
+                    color: $orange;
+                }
+            }
+
+            &__3 {
+                background-color: $lightgreen;
+                border: solid 1.5px $green;
+
+                &__hbar {
+                    border-left: none;
+                    border-top: 1.5px solid $green;
+                    width: 90%;
+                }
+
+                &__close {
+                    color: $green;
+                }
+            }
+        }
+
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+        }
+
+        &__counter {
+            color: $lightgrayWOpacity;
+            font-size: 10px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        &__close {
+            background: none;
+            border: none;
+            font-size: 10px;
+            font-weight: 400;
+            margin-left: 25px;
+            text-align: right;
+        }
+
+        &__close:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        &__close:focus {
+            outline: none;
+        }
+
+        &__list-container {
+            padding-bottom: 12px;
+            transition: background 0.1s ease;
+        }
+    
+        &__title {
+            border: none;
+            color: $lightBlack;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 1rem;
+            text-align: left;
+
+            &__input {
+                background-color: transparent;
+                border: none;
+                color: $lightBlack;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                text-align: left;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

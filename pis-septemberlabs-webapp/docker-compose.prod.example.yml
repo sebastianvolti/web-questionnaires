@@ -1,0 +1,12 @@
+version: '2.4'
+networks:
+  default:
+    external:
+      name: pis-septemberlabs
+services:
+  webapp:
+    image: webapp:prod
+    command: serve -s build -l 5002
+    restart: always
+    cpus: 0.2
+    mem_limit: 100m

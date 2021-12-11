@@ -1,0 +1,17 @@
+version: '3.7'
+networks:
+  default:
+    external:
+      name: pis-septemberlabs
+services:
+  admin:
+    tty: true
+    build:
+      context: /Users/svolti/Documents/fing/pis/pis-septemberlabs-admin
+    container_name: pis-septemberlabs_admin
+    command: yarn start
+    ports:
+      - '5001:5001'
+    volumes:
+      - /Users/svolti/Documents/fing/pis/pis-septemberlabs-admin/src:/app/pis-septemberlabs-admin/src
+      - /Users/svolti/Documents/fing/pis/pis-septemberlabs-admin/public:/app/pis-septemberlabs-admin/public
